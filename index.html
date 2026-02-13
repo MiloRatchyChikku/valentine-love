@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For My Alagii ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  background:url("bg.jpg");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  font-family:'Poppins', sans-serif;
+  text-align:center;
+  color:#7a003c;
+}
+.page{
+display:none;
+min-height:100vh;
+padding:30px;
+}
+.show{display:block;}
+button{
+padding:12px 24px;
+border:none;
+border-radius:25px;
+background:#ff4d6d;
+color:white;
+font-size:16px;
+margin:10px;
+cursor:pointer;
+}
+img{
+width:260px;
+border-radius:20px;
+margin:15px 0;
+animation:fade 1.5s;
+}
+@keyframes fade{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+h1,h2{font-family:'Dancing Script', cursive;}
+input{
+padding:10px;
+border-radius:20px;
+border:2px solid pink;
+width:70%;
+font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page show" id="p1">
+<img src="proposal.jpg">
+<h2>Dey Porikii ❤️</h2>
+<h1>Will you be my Valentine?</h1>
+
+<button onclick="showPage('p2')">Yes 💞</button>
+<button id="no" onmouseover="moveNo()">No 😏</button>
+<p id="warn"></p>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="p2">
+<img src="kiss.jpg">
+<h1>Haa! Be my Valentine forever 💞</h1>
+<p>I want to show you some special memories of us ❤️</p>
+<button onclick="showPage('p3')">See the moments 📸</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="p3">
+ <h1>Our Beautiful Memories 💖</h1>
+  <h2>Our first selfie 🥰</h2>
+  <img src="img1.jpg">
+  <button onclick="showPage('p3a')">Next ➡️</button>
+</div>
+<div class="page" id="p3a">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Our first bike trip 🏍️</h2>
+  <img src="img2.jpg">
+  <button onclick="showPage('p3b')">Next ➡️</button>
+</div>
+<div class="page" id="p3b">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Our first park visit 💖</h2>
+  <img src="img3.jpg">
+  <button onclick="showPage('p3c')">Next ➡️</button>
+</div>
+<div class="page" id="p3c">
+<h1>Our Beautiful Memories 💖</h1>
+  <h1>Unforgettable one 💖</h1>
+  <img src="img4.jpg">
+  <button onclick="showPage('p3d')">Next ➡️</button>
+</div>
+<div class="page" id="p3d">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Our extreme laugh day 💖</h2>
+  <img src="img5.jpg">
+  <button onclick="showPage('p3e')">Next ➡️</button>
+</div>
+<div class="page" id="p3e">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Our Ariyanur trip 🏍️</h2>
+  <img src="img6.jpg">
+  <button onclick="showPage('p3f')">Next ➡️</button>
+</div>
+<div class="page" id="p3f">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>My first wallpaper for your contact 💖</h2>
+  <img src="img7.jpg">
+  <button onclick="showPage('p3g')">Next ➡️</button>
+</div>
+<div class="page" id="p3g">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Hogenakkal visit 💖</h2>
+  <img src="img77.jpg">
+  <button onclick="showPage('p3h')">Next ➡️</button>
+</div>
+
+<div class="page" id="p3h">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Our first birthday together 🎂</h2>
+  <img src="img8.jpg">
+  <button onclick="showPage('p3i')">Next ➡️</button>
+</div>
+<div class="page" id="p3i">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Park visit 💖</h2>
+  <img src="img9.jpg">
+  <button onclick="showPage('p3j')">Next ➡️</button>
+</div>
+<div class="page" id="p3j">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Half saree in front of him 💖</h2>
+  <img src="img10.jpg">
+  <button onclick="showPage('p3k')">Next ➡️</button>
+</div>
+<div class="page" id="p3k">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Kerala visit 💖</h2>
+  <img src="img11.jpg">
+  <button onclick="showPage('p3l')">Next ➡️</button>
+</div>
+<div class="page" id="p3l">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Beach visit 💖</h2>
+  <img src="img12.jpg">
+  <button onclick="showPage('p3m')">Next ➡️</button>
+</div>
+<div class="page" id="p3m">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Our Anniversary 💍</h2>
+  <img src="img13.jpg">
+  <button onclick="showPage('p3n')">Next ➡️</button>
+</div>
+<div class="page" id="p3n">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Unforgettable Day 💍</h2>
+  <img src="img14.jpg">
+  <button onclick="showPage('p3o')">Next ➡️</button>
+</div>
+<div class="page" id="p3o">
+<h1>Our Beautiful Memories 💖</h1>
+  <h2>Forever Us💍</h2>
+  <img src="img15.jpg">
+  <button onclick="showPage('p4')">Next ➡️</button>
+</div>
+
+
+<!-- PAGE 4 -->
+<div class="page" id="p4">
+<h1>Edoo Ratchasa ❤️</h1>
+<p>Type <b>I love you deee pondati</b> to unlock my special love letter</p>
+
+<input id="typeBox" placeholder="Type here..."><br><br>
+<button onclick="checkText()">Submit 💕</button>
+<p id="error"></p>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="p5">
+<h1>My Love Letter 💌</h1>
+
+<p>
+<!-- ✨ INGA UN PERSONAL PARAGRAPH TYPE PANNU ✨ -->
+My Baby,<br>
+ My Love ,I don’t know when it started… But somehow, you became my favourite person,
+Every message from you, Every small moment, means more than to me than you know.
+This is not just a page, It's my heart, written only for you.
+
+"Un love kaga romba yengiruken, 🥺❤️
+Unkitta express panniruken.
+Nee naa veetla irukara appo, en love-ku ok nu sonna da.
+You started loving me."
+
+"Next day college-la, phone-la evalo pesunalum,
+clg bus-la eritu un kitta phone-la pesitey varen.
+Bus-la same colour dress… 🥰
+Andha time-la namakku exam."
+
+"College vanthu reach aagura varaikum ellam normal-aa irundhuchu.
+But unna paaka pora andha moment nerunga nerunga,
+time aaga aaga, en heart beat enakullaye kekuthu da… 💓
+Pathattam full-aa."
+
+"Bag-a class-la vechuttu, unna theduren.
+Unna kanom… thirumba unna theduren.
+Class kitta vandhu bag-a eduthuttu call panren."
+
+"Nee solra —
+‘Naa department steps-la iruken’ nu.
+Naa solren —
+‘Naa main steps-la iruken’ nu.
+‘Appo pakalaam’ nu rendu perum steps-ku porom."
+
+"Andha moment-la,
+‘Hey poriki…’ 😌
+Love epdi express pannanum nu kooda theriyaama,
+enna paathuttu wall mela sanjittu,
+‘I LOVE YOU’ nu sonna da."
+
+"Naa velattu-thanamaa keten,
+‘I love you-va vida idhu vera mari iruke’ nu.
+Andha vaartha en throat-la stuck aayiduchu… 🥹
+‘Thirumba solu da’ nu keten."
+
+"Nee thirumba,
+‘I LOVE YOU’ nu sonna.
+Apram naa keten —
+‘Hug kudu’ nu.
+Thidirnu enna hug pannina da… 🤍"
+
+"Andha moment-la,
+vera edhuvum venda.
+Nee mattum podhum nu thonuchu.
+Seriously, ipo varaikum adhe than da en manasula iruku."
+I Choose you,
+Today,
+Tomorrow,
+Always da
+"I Promise you.
+Trust me.
+I am forever yours, da alaga. ❤️
+Neeyum enodadhu tha."
+
+"I LOVE YOU." 💞✨</p>
+
+<button onclick="showPage('p6')">Sirichutiyaa? 😊</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="p6">
+  <h1>I LOVE YOU DA RATCHASAAAAAAAA ❤️🔥</h1>
+  <p>
+    by Unoda Pondati <br>
+    Echakala Buddi Lover 💞
+  </p>
+</div>
+<script>
+function showPage(id){
+  document.querySelectorAll(".page").forEach(p=>{
+    p.classList.remove("show");
+  });
+  document.getElementById(id).classList.add("show");
+}
+
+let tries = 0;
+function moveNo(){
+  tries++;
+  let b = document.getElementById("no");
+  b.style.position = "absolute";
+  b.style.left = Math.random()*70 + "%";
+  b.style.top = Math.random()*70 + "%";
+  if(tries > 4){
+    document.getElementById("warn").innerHTML =
+      "Don't waste your time to follow the No 😜";
+  }
+}
+
+function checkText(){
+  let v = document.getElementById("typeBox").value
+            .toLowerCase()
+            .trim();
+  if(v === "i love you deee pondati"){
+    showPage('p5');
+  }else{
+    document.getElementById("error").innerHTML =
+      "Achooo! Crt-aa type pannu dee chikku 😜";
+  }
+}
+</script>
+
+</body>
+</html>
